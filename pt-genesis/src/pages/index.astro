@@ -1,11 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Button } from "@/components/ui/button";
+import NavBar from "@/components/NavBar";
 ---
 
 <Layout title="Lintigade">
-	<main class="w-full h-screen">
-		Hello there
-		General Kenobi
+	<main>
+		<NavBar client:only="react"/>
 	</main>
 </Layout>
