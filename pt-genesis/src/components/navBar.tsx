@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
     </div>
   ) : (
     <div className=' h-16 w-auto m-3 p-2 flex justify-between items-center bg-white rounded-xl shadow-gray-400 shadow-sm'>
-      <p className='pl-20 font-serif text-2xl'>Litigade</p>
+      <p className='pl-20 font-serif text-2xl text-blue-950'>Litigade</p>
       <div className='flex gap-10 text-xl'>
         <a className='hover:scale-110 transition-transform ease-in-out duration-300' href="">Home</a>
         <a className='hover:scale-110 transition-transform ease-in-out duration-300' href="">Product</a>
