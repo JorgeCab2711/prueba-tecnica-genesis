@@ -1,0 +1,18 @@
+---
+import BookingFormLast from "./BookingFormLast"
+import { Button } from "./ui/button"
+---
+<div class="bg-custom-image bg-cover bg-center grid p-10 gap-5 h-screen">
+    <p class="font-serif text-blue-950 font-semibold">Contact Us</p>
+    <h1 class="font-serif text-blue-950 font-semibold text-4xl">Make an Appointment</h1>
+    <BookingFormLast client:load />
+</div>
+<div class="bg-white grid grid-cols-2 items-center">
+    <div class="p-5">
+        <h1 class="font-serif text-blue-950 text-3xl">Request A Free Consultation</h1>
+        <p>ther quick fox jumps over the lazy dog</p>
+    </div>
+    <div class="flex justify-center">
+        <Button className="w-52 h-14 bg-orange-900" variant="gooeyLeft">Contact Us</Button>
+    </div>
+</div>

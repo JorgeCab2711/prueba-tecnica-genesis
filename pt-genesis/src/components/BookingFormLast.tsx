@@ -28,12 +28,13 @@ const BookingForm: React.FC = () => {
       message: "Name must be at least 2 characters.",
     }),
     email: z.string().email({ message: "Invalid Email" }),
-    department: z.string().min(2, {
+      department: z.string().min(2, {
       message: "Select a department",
     }),
     time: z.string().min(1, {
       message: "Select a time",
     }),
+    message: z.string().optional(),
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -43,6 +44,7 @@ const BookingForm: React.FC = () => {
       email: "",
       department: "",
       time: "",
+      message: "",
     },
   });
 
@@ -53,6 +55,7 @@ const BookingForm: React.FC = () => {
       user_email: values.email,
       department: values.department,
       time: values.time,
+      message: values.message,
     };
 
     emailjs
@@ -75,18 +78,16 @@ const BookingForm: React.FC = () => {
   }
 
   return (
-    <div className="bg-white shadow-gray-500 rounded-xl p-4 w-80 h-fit shadow-sm">
-      <h1 className="font-serif text-xl text-blue-950 pb-3">Book Appointment</h1>
+    <div className="bg-transparent p-8 w-full max-w-2xl">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-2 gap-4">
           <FormField
             control={form.control}
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your name" {...field} />
+                  <Input placeholder="Full Name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -97,9 +98,8 @@ const BookingForm: React.FC = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your email" {...field} />
+                  <Input placeholder="example@gmail.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -110,14 +110,10 @@ const BookingForm: React.FC = () => {
             name="department"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Department *</FormLabel>
                 <FormControl>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select your department" />
+                      <SelectValue placeholder="Please Select" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="hr">Human Resources</SelectItem>
@@ -135,12 +131,8 @@ const BookingForm: React.FC = () => {
             name="time"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Time *</FormLabel>
                 <FormControl>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <SelectTrigger>
                       <SelectValue placeholder="Select a time" />
                     </SelectTrigger>
@@ -162,12 +154,20 @@ const BookingForm: React.FC = () => {
               </FormItem>
             )}
           />
-          <div className="grid place-items-center">
-            <Button
-              variant="gooeyRight"
-              className="bg-cyan-800 hover:scale-110 hover:ease-out hover:duration-300"
-              type="submit"
-            >
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem className="col-span-2">
+                <FormControl>
+                  <Input type="text-area" placeholder="Message" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <div className="col-span-2 flex  mt-4">
+            <Button variant="ringHover" className="bg-orange-900 hover:bg-brown-700" type="submit">
               Book Appointment
             </Button>
           </div>

@@ -13,6 +13,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'custom-image': "url('src/images/grandpas.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
