@@ -5,10 +5,9 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    react()
-  ]
+  site: 'https://JorgeCab2711.github.io',
+  base: 'prueba-tecnica-genesis',
+  integrations: [tailwind({
+    applyBaseStyles: false
+  }), react(), icon()]
 });
