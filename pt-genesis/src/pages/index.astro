@@ -2,11 +2,13 @@
 import BookAppointment from "@/components/BookAppointment.astro";
 import Layout from "../layouts/Layout.astro";
 import NavBar from "@/components/navBar";
+import PracticeAdvice from "@/components/PracticeAdvice.astro";
 ---
 
 <Layout title="Lintigade">
 	<main>
 		<NavBar client:only="react"/>
 		<BookAppointment />
+		<PracticeAdvice/>
 	</main>
 </Layout>
