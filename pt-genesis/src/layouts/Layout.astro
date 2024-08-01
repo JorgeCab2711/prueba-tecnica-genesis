@@ -4,7 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import '@/input.css'
+import "@/input.css";
 ---
 
 <!doctype html>
@@ -14,12 +14,13 @@ import '@/input.css'
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link href="./src/output.css" rel="stylesheet">
+		<link href="./src/output.css" rel="stylesheet" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="w-full h-screen ">
-		<slot />
+	<body
+		class="w-full h-screen absolute inset-0 -z-10 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+	>
+	<slot />
 	</body>
 </html>
-
