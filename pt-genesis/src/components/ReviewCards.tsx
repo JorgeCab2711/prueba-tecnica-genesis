@@ -14,10 +14,10 @@ interface CardData {
 }
 
 const renderCard = ({ name, title, imageUrl }: CardData) => (
-    <Card className="h-fit p-5 w-fit">
+    <Card className="h-72 p-11 w-96">
         <CardContent className="grid gap-5 font-semibold text-gray-600 place-items-center">
             <img src={stars.src} className="w-1/2 h-auto" alt="Stars" />
-            <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+            <p>Slate helps you see how many more days you need to work <br />to reach your financial goal.</p>
             <div className="flex items-center">
                 <Avatar className="flex-shrink-0">
                     <AvatarImage src={imageUrl} />
@@ -52,7 +52,7 @@ const data: CardData[] = [
 
 export default function ReviewCards() {
     return (
-        <div className="grid grid-cols-1 h-auto mt-10 mb-10 w-full gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 h-auto mt-10 mb-10 w-full gap-10 sm:grid-cols-3 place-items-center">
             {data.map((person, index) => (
                 <React.Fragment key={index}>
                     {renderCard(person)}

@@ -2,12 +2,15 @@
 import { YouTube } from "@astro-community/astro-embed-youtube";
 ---
 
-<div class="grid justify-center gap-8 text-center p-10" style="background: linear-gradient(to bottom, white 50%, #001f3f 50%);">
-    <h1 class="font-serif text-blue-950 text-3xl font-medium">Who are we</h1>
-    <p class="">
+<div class="grid justify-center gap-10 text-center pb-32 pt-32" style="background: linear-gradient(to bottom, white 50%, #001f3f 50%);">
+    <h1 class="font-serif text-blue-950 text-4xl font-medium">Who are we</h1>
+    <p>
         Problems trying to resolve the conflict between <br />the two major
         realms of Classical physics: Newtonian mechanics
     </p>
-    <YouTube class='w-full h-full' id="7q0TRgDvT9k" />
+    <div class="relative w-full" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <YouTube class='w-full h-full' id="7q0TRgDvT9k" />
+        </div>
+    </div>
 </div>
-
