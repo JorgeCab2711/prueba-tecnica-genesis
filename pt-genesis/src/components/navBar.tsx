@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
   return isMobile ? (
     <div className=' h-fit w-auto m-3 p-3 bg-white rounded-xl shadow-gray-400 shadow-sm'>
       <div className='flex justify-between items-center h-fit'>
-        <p className='pl-10 font-serif text-3xl text-blue-950'>Litigade</p>
+        <p className='pl-10 font-serif text-3xl font-semibold text-blue-950'>Litigade</p>
         <div className='flex gap-5 p-3'>
           <Search className='hover:cursor-pointer hover:scale-110' />
           <ShoppingCart className='hover:cursor-pointer hover:scale-110' />
@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
     </div>
   ) : (
     <div className=' h-16 w-auto m-3 p-2 flex justify-between items-center bg-white rounded-xl shadow-gray-400 shadow-sm'>
-      <p className='pl-20 font-serif text-2xl text-blue-950'>Litigade</p>
+      <p className='pl-20 font-serif text-2xl font-semibold text-blue-950'>Litigade</p>
       <div className='flex gap-10 text-xl'>
         <a className='hover:scale-110 transition-transform ease-in-out duration-300' href="">Home</a>
         <a className='hover:scale-110 transition-transform ease-in-out duration-300' href="">Product</a>
