@@ -4,6 +4,7 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   prefix: "",
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -12,6 +13,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'custom-image': "url('src/images/grandpas.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

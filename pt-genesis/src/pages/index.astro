@@ -1,11 +1,24 @@
 ---
+import BookAppointment from "@/components/BookAppointment.astro";
 import Layout from "../layouts/Layout.astro";
-import { Button } from "@/components/ui/button";
+import NavBar from "@/components/navBar";
+import PracticeAdvice from "@/components/PracticeAdvice.astro";
+import WhoAreWe from "@/components/WhoAreWe.astro"
+import WhatClientsSay from "@/components/WhatClientsSay.astro"
+import OurAttorneys from '@/components/OurAttorneys.astro'
+import ContactUs from "@/components/ContactUs.astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="Lintigade">
-	<main class="w-full h-screen">
-		Hello there
-		General Kenobi
+	<main class="grid">
+		<NavBar client:only="react"/>
+		<BookAppointment />
+		<PracticeAdvice/>
+		<WhoAreWe/>
+		<WhatClientsSay/>
+		<OurAttorneys/>
+		<ContactUs/>
+		<Footer/>
 	</main>
 </Layout>

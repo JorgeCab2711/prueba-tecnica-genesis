@@ -1,0 +1,95 @@
+---
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+---
+
+<div class="bg-gray-50 py-12 h-screen overflow-scroll">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-gray-800">Practice Advice</h1>
+      <p class="mt-2 text-gray-600">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+        <CardHeader className="bg-orange-100 p-6 text-center">
+          <div class="flex items-center justify-center">
+            <div class="bg-white p-6 rounded-full shadow-md overflow-hidden"> <!-- Increased padding -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFDB58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale">
+                    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                    <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                    <path d="M7 21h10"/>
+                    <path d="M12 3v18"/>
+                    <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+                </svg>
+            </div>
+          </div>
+          <CardTitle className="mt-4 text-l font-thin font-serif text-gray-800">Frauds or Mislead</CardTitle>
+        </CardHeader>
+        <CardContent className="p-6">
+          <ul class="space-y-2 text-gray-700 ">
+            <li>- The best products start with Figma</li>
+            <li>- Design with real data</li>
+            <li>- Lightning fast prototyping</li>
+            <li>- Fastest way to organize</li>
+            <li>- Work at the speed of thought.</li>
+          </ul>
+          <Button variant='linkHover2' className="mt-4 bg-transparent text-yellow-600 text-center">Learn More</Button>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+        <CardHeader className="bg-orange-100 p-6 text-center">
+          <div class="flex items-center justify-center">
+            <div class="bg-white p-6 rounded-full shadow-md overflow-hidden"> <!-- Increased padding -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFDB58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gavel">
+                    <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"/>
+                    <path d="m16 16 6-6"/>
+                    <path d="m8 8 6-6"/>
+                    <path d="m9 7 8 8"/>
+                    <path d="m21 11-8-8"/>
+                </svg>
+            </div>
+          </div>
+          <CardTitle className="mt-4 text-l font-thin font-serif text-gray-800">Bailes & Warrants</CardTitle>
+        </CardHeader>
+        <CardContent className="p-6">
+          <ul class="space-y-2 text-gray-700">
+            <li>- The best products start with Figma</li>
+            <li>- Design with real data</li>
+            <li>- Lightning fast prototyping</li>
+            <li>- Fastest way to organize</li>
+            <li>- Work at the speed of thought.</li>
+          </ul>
+          <Button variant='linkHover2' className="mt-4 bg-transparent text-yellow-600 text-center">Learn More</Button>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+        <CardHeader className="bg-orange-100 p-6 text-center">
+          <div class="flex items-center justify-center">
+            <div class="bg-white p-6 rounded-full shadow-md overflow-hidden"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFDB58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-check">
+                    <path d="M11 18H3"/>
+                    <path d="m15 18 2 2 4-4"/>
+                    <path d="M16 12H3"/>
+                    <path d="M16 6H3"/>
+                </svg>
+            </div>
+          </div>
+          <CardTitle className="mt-4 text-l font-thin font-serif text-gray-800">Federal Drug Crimes</CardTitle>
+        </CardHeader>
+        <CardContent className="p-6">
+          <ul class="space-y-2 text-gray-700">
+            <li>- The best products start with Figma</li>
+            <li>- Design with real data</li>
+            <li>- Lightning fast prototyping</li>
+            <li>- Fastest way to organize</li>
+            <li>- Work at the speed of thought.</li>
+          </ul>
+          <Button variant='linkHover2' className="mt-4 bg-transparent text-yellow-600 text-center">Learn More</Button>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</div>
