@@ -1,0 +1,84 @@
+---
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+
+import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+
+import { Button } from "./ui/button";
+---
+
+<div class="bg-blue-950 h-fit">
+    <div class="flex justify-between items-center h-32 bg-gray-900 px-8">
+        <p class="text-white font-serif text-4xl">Litigade</p>
+        <div class="flex gap-4">
+            <Instagram className="text-pink-600 scale-125"/>
+            <Facebook className="text-blue-600 scale-125"/>
+            <Twitter className="text-cyan-400 scale-125"/>
+            <Youtube className="text-red-600 scale-125"/>
+        </div>
+    </div>
+    
+    <div class="bg-gray-900 text-white font-serif py-10 px-20">
+        <div class="grid grid-cols-5 gap-10">
+            <Card className="bg-transparent border-none text-white">
+                <CardHeader>
+                    <CardTitle className="text-lg font-semibold">Company Info</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                    <a href="#" class="hover:underline">About Us</a>
+                    <a href="#" class="hover:underline">Carrier</a>
+                    <a href="#" class="hover:underline">We are hiring</a>
+                    <a href="#" class="hover:underline">Blog</a>
+                </CardContent>
+            </Card>
+            <Card className="bg-transparent border-none text-white">
+                <CardHeader>
+                    <CardTitle className="text-lg font-semibold">Legal</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                    <a href="#" class="hover:underline">About Us</a>
+                    <a href="#" class="hover:underline">Carrier</a>
+                    <a href="#" class="hover:underline">We are hiring</a>
+                    <a href="#" class="hover:underline">Blog</a>
+                </CardContent>
+            </Card>
+            <Card className="bg-transparent border-none text-white">
+                <CardHeader>
+                    <CardTitle className="text-lg font-semibold">Features</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                    <a href="#" class="hover:underline">Business Marketing</a>
+                    <a href="#" class="hover:underline">User Analytic</a>
+                    <a href="#" class="hover:underline">Live Chat</a>
+                    <a href="#" class="hover:underline">Unlimited Support</a>
+                </CardContent>
+            </Card>
+            <Card className="bg-transparent border-none text-white">
+                <CardHeader>
+                    <CardTitle className="text-lg font-semibold">Resources</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                    <a href="#" class="hover:underline">iOS & Android</a>
+                    <a href="#" class="hover:underline">Watch a Demo</a>
+                    <a href="#" class="hover:underline">Customers</a>
+                    <a href="#" class="hover:underline">API</a>
+                </CardContent>
+            </Card>
+            <div class="bg-transparent border-none">
+                <h1 class="text-lg font-semibold mb-4">Get In Touch</h1>
+                <div class="flex space-x-2">
+                    <input type="email" placeholder="Your Email" class="px-4 py-2 w-full text-gray-900" />
+                    <Button className="bg-orange-600 px-4 py-2">Subscribe</Button>
+                </div>
+                <p class="mt-2 text-gray-400">Lorem ipsum dolor amet</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-sky-800 py-4">
+        <p class="text-white text-center">Made With Love By Figmaland All Rights Reserved</p>
+    </div>
+</div>
