@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
 
   // Renderizado condicional dependiendo del tamano de la pantalla
   return isMobile ? (
-    <div className=' h-fit w-auto m-3 p-3 bg-white rounded-xl shadow-gray-700 shadow-sm'>
+    <div className=' h-fit w-auto m-3 p-3 bg-white rounded-xl shadow-gray-400 shadow-sm'>
       <div className='flex justify-between items-center h-fit'>
         <p className='pl-10 font-serif text-3xl text-blue-950'>Litigade</p>
         <div className='flex gap-5 p-3'>
@@ -38,7 +38,7 @@ const NavBar: React.FC = () => {
       </div>
     </div>
   ) : (
-    <div className=' h-16 w-auto m-3 p-2 flex justify-between items-center bg-white rounded-xl shadow-gray-700 shadow-sm'>
+    <div className=' h-16 w-auto m-3 p-2 flex justify-between items-center bg-white rounded-xl shadow-gray-400 shadow-sm'>
       <p className='pl-20 font-serif text-2xl'>Litigade</p>
       <div className='flex gap-10 text-xl'>
         <a className='hover:scale-110 transition-transform ease-in-out duration-300' href="">Home</a>

@@ -66,7 +66,7 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="bg-white shadow-gray-500 rounded-xl p-4 w-96 h-fit shadow-sm">
+    <div className="bg-white shadow-gray-500 rounded-xl p-4 w-80 h-fit shadow-sm">
       <h1 className="font-serif text-xl text-blue-950 pb-3">
         Book Appointment
       </h1>
