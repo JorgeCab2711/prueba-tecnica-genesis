@@ -15,3 +15,4 @@ export default defineConfig({
     applyBaseStyles: false
   }), react(), icon()]
 });
+
