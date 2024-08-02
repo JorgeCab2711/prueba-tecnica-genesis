@@ -8,6 +8,10 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://JorgeCab2711.github.io',
   base: 'prueba-tecnica-genesis',
+  output: 'static',
+  build: {
+    outDir: 'dist',
+  },
   integrations: [tailwind({
     applyBaseStyles: false
   }), react(), icon()]
