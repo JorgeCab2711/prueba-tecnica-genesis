@@ -1,54 +1,97 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
+# PT-Genesis
+
+Este es un proyecto creado utilizando Astro, TypeScript, Tailwind CSS, React y Shadcn. El proyecto incluye funcionalidades de formularios de reserva que permiten enviar correos electrónicos utilizando EmailJS.
+
+## Tecnologías Utilizadas
+
+- **Astro**: Framework para construir sitios web rápidos.
+- **TypeScript**: Lenguaje de programación que extiende JavaScript añadiendo tipos.
+- **Tailwind CSS**: Framework de CSS para un diseño rápido y flexible.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Shadcn**: Biblioteca para componentes de UI.
+
+## Estructura del Proyecto
+
+La estructura del proyecto es la siguiente:
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+/pt-genesis
+│
+├── .astro/
+├── .github/
+├── .vscode/
+├── dist/
+├── node_modules/
 ├── public/
-│   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   │   ├── ui/
+│   │   │   ├── AttorneyCards.tsx
+│   │   │   ├── BookAppointment.astro
+│   │   │   ├── BookingForm.tsx
+│   │   │   ├── BookingFormLast.tsx
+│   │   │   ├── Card.astro
+│   │   │   ├── ContactUs.astro
+│   │   │   ├── Footer.astro
+│   │   │   ├── navBar.tsx
+│   │   │   ├── OurAttorneys.astro
+│   │   │   ├── PracticeAdvice.astro
+│   │   │   ├── ReviewCards.tsx
+│   │   │   ├── WhatClientsSay.astro
+│   │   │   ├── WhoAreWe.astro
+│   │   ├── images/
+│   │   │   ├── grandpas.png
+│   │   │   ├── stars.png
+│   │   ├── layouts/
+│   │   │   ├── Layout.astro
+│   │   ├── lib/
+│   │   │   ├── utils.ts
+│   ├── pages/
+│   │   ├── index.astro
+│   ├── env.d.ts
+│   ├── input.css
+│   ├── output.css
+│
+├── .gitignore
+├── astro.config.mjs
+├── components.json
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Instalación
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Sigue estos pasos para instalar y ejecutar el proyecto:
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/JorgeCab2711/pt-genesis.git
+   ```
 
-## 🧞 Commands
+2. Dirígete al directorio del proyecto:
+   ```sh
+   cd pt-genesis
+   ```
 
-All commands are run from the root of the project, from a terminal:
+3. Instala las dependencias:
+   ```sh
+   npm install
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+4. Inicia el servidor de desarrollo:
+   ```sh
+   npm run dev
+   ```
 
-## 👀 Want to learn more?
+## Funcionalidades de los Formularios de Reserva
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto incluye formularios de reserva que permiten enviar correos electrónicos utilizando EmailJS. Las funcionalidades incluyen:
+
+- **Formulario vacío**: Maneja la lógica cuando el formulario está vacío.
+- **Formulario con datos**: Una vez que los datos están completos, el formulario utiliza EmailJS para enviar un correo electrónico al usuario correspondiente, en este caso, al correo de Luis.
+
+
