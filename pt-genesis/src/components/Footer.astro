@@ -12,8 +12,8 @@ import { Button } from "./ui/button";
 ---
 
 <div class="bg-blue-950 h-fit">
-    <div class="flex justify-between items-center h-32 bg-gray-900 px-8">
-        <p class="text-white font-serif text-4xl">Litigade</p>
+    <div class="flex flex-col md:flex-row justify-between items-center h-32 bg-gray-900 px-8">
+        <p class="text-white font-serif text-4xl mb-4 md:mb-0">Litigade</p>
         <div class="flex gap-4">
             <Instagram className="text-pink-600 scale-125"/>
             <Facebook className="text-blue-600 scale-125"/>
@@ -22,8 +22,8 @@ import { Button } from "./ui/button";
         </div>
     </div>
     
-    <div class="bg-gray-900 text-white font-serif py-10 px-20">
-        <div class="grid grid-cols-5 gap-10">
+    <div class="bg-gray-900 text-white font-serif py-10 px-4 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
             <Card className="bg-transparent border-none text-white">
                 <CardHeader>
                     <CardTitle className="text-lg font-semibold">Company Info</CardTitle>
@@ -70,7 +70,7 @@ import { Button } from "./ui/button";
             </Card>
             <div class="bg-transparent border-none">
                 <h1 class="text-lg font-semibold mb-4">Get In Touch</h1>
-                <div class="flex space-x-2">
+                <div class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
                     <input type="email" placeholder="Your Email" class="px-4 py-2 w-full text-gray-900" />
                     <Button className="bg-orange-600 px-4 py-2">Subscribe</Button>
                 </div>
